@@ -28,7 +28,7 @@ Serial port;
 void setup(){
   size(1024, 768);
   // INICIALIZA A PORTA SERIAL
-  port = new Serial(this, "/dev/ttyUSB0", 9600);
+  port = new Serial(this, "/dev/ttyUSB1", 9600);
   // INICIALIZA OS QUADRADOS DOS LEDS
   sq11 = new Button("", x_space, y_space, comp, comp, 5);
   sq12 = new Button("", x_space+comp+30, y_space, comp, comp, 5);
@@ -72,7 +72,7 @@ void setup(){
   btn_anim4 = new Button("4", x_space+(comp+55)*4+105, y_space+110, 50, 50, 10);
   btn_anim5 = new Button("NA", x_space+(comp+55)*4+35, y_space+180, 50, 50, 10);
   // INICIALIZA AS IMAGENS
-  logo = loadImage("logo01_inverted.png");
+  logo = loadImage("logo02_inverted.png");
   flopLogo = loadImage("flop_logo_resized.png");
   raslogo = loadImage("ras_logo2.png");
 }

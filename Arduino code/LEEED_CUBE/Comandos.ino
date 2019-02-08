@@ -75,7 +75,7 @@ void rain(){
 }
 
 void multiplex(){
-  for (int t = 100; t >= 0; t = t - 10){
+  for (int t = 10000; t >= 0; t = t - 100){
    if(t == 0){
     for(int r = 0; r <= 100; r = r + 1){
       for(int y = 0; y <= 5; y = y + 1){
@@ -84,7 +84,7 @@ void multiplex(){
             digitalWrite(ledPins[x], HIGH);
             delayMicroseconds(tempo);
         if (x == 24){
-          delay(t);
+          delayMicroseconds(t);
           digitalWrite(gndPins[y], LOW);
           allLedsOff();
         }
@@ -96,7 +96,7 @@ void multiplex(){
             digitalWrite(ledPins[x], HIGH);
             delayMicroseconds(tempo);
         if (x == 24){
-          delay(t);
+          delayMicroseconds(t);
           digitalWrite(gndPins[y], LOW);
           allLedsOff();
         }
@@ -110,7 +110,7 @@ void multiplex(){
             digitalWrite(ledPins[x], HIGH);
             delayMicroseconds(tempo);
         if (x == 24){
-          delay(t);
+          delayMicroseconds(t);
           digitalWrite(gndPins[y], LOW);
           allLedsOff();
         }
@@ -122,7 +122,7 @@ void multiplex(){
             digitalWrite(ledPins[x], HIGH);
             delayMicroseconds(tempo);
         if (x == 24){
-          delay(t);
+          delayMicroseconds(t);
           digitalWrite(gndPins[y], LOW);
           allLedsOff();
         }
